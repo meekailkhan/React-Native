@@ -13,8 +13,8 @@ export default function RootLayout() {
               iconName = focused ? "home" : "home-outline";
             } else if(route.name === "setting"){
               iconName = focused ? "settings" : "settings-outline";
-            }else if( route.name === "about/index"){
-              iconName = focused ? "person" : "person-outline";
+            }else if( route.name === "product"){
+              iconName = focused ? "cube" : "cube-outline";
             }
             return <Ionicons name={iconName as any} size={size} color={color}/>
           },
@@ -23,7 +23,10 @@ export default function RootLayout() {
     >
       <Tabs.Screen name="index" options={{ title: "Home" }} />
       <Tabs.Screen name="setting" options={{ title: "Settings" }} />
-      <Tabs.Screen name="about/index" options={{title :"About"}} />
+      <Tabs.Screen name="product" options={{
+        title :"Product",
+        headerShown : false
+      }} />
     </Tabs>
   );
 }
