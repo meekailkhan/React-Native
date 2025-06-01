@@ -11,7 +11,7 @@ function SignupScreen({ navigation }) {
     async function handelSubmit() {
     
         try {
-          const response = await axios.post('http://192.168.1.41:5000/api/signup', {
+          const response = await axios.post('http://localhost:5000/api/signup', {
             name : username,
             email,
             password

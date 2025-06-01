@@ -12,9 +12,9 @@ export default function DrawerNavigator(){
             <Drawer.Navigator screenOptions={{
                 headerShown : true,
                 drawerActiveBackgroundColor : "lightgreen",
-                drawerHideStatusBarOnOpen:true,
-                drawerPosition : "right",
-                drawerType : "back",
+                drawerHideStatusBarOnOpen:false,
+                drawerPosition : "left",
+                drawerType : "front",
                 drawerStatusBarAnimation : "slide"
             }}>
                 <Drawer.Screen name="Home" component={HomeScreen} />
