@@ -12,11 +12,12 @@ import ListCompo from "./component/ListCompo";
 import SectionListCompo from "./component/SectionCompo";
 
 export default function App() {
+  console.log("this is work")
   
   return (
     <View style={{backgroundColor:"plum",flex:1,padding:45,gap:20}}>
       
-      {/* <ViewText /> */}
+      <ViewText />
       {/* <ImageCompo /> */}
       {/* <ScrollViewCompo /> */}
       {/* <ButtonCompo title="Press" disable={false} onPress={()=>  console.log(`you press on button`)}/> */}
@@ -27,7 +28,7 @@ export default function App() {
       {/* <AlertCompo /> */}
       {/* <TextInpuCompo /> */}
       {/* <ListCompo /> */}
-      <SectionListCompo />
+      {/* <SectionListCompo /> */}
     </View> 
   )
 }
